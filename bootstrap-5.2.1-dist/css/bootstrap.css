@@ -37,8 +37,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-tsblue: #004A5E;
-  --bs-tsbluehover: #008db3;  
+  --bs-tsblue: #185238; /* Actually Green in this version for GSM */
+  --bs-tsbluehover: #247953;  /* Actually Green in this version for GSM */
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -51,8 +51,8 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-tsblue-rgb: 0, 74, 94;
-  --bs-tsbluehover-rgb: 0, 141, 179;
+  --bs-tsblue-rgb: 24, 82, 56; /* Actually Green in this version for GSM */
+  --bs-tsbluehover-rgb: 36, 121, 83; /* Actually Green in this version for GSM */
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -6849,7 +6849,7 @@ background: #008db3;
 
 .text-bg-ts {
   color: #fff !important;
-  background-color: RGBA(0, 74, 94, var(--bs-bg-opacity, 1)) !important
+  background-color: RGBA(24, 82, 56 var(--bs-bg-opacity, 1)) !important /* Actually Green in this version for GSM */
 }
 
 .link-primary {
@@ -11033,3 +11033,4 @@ background: #008db3;
 }*/
 
 /*# sourceMappingURL=bootstrap.css.map */
+
