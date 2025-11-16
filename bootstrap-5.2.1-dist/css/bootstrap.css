@@ -6849,7 +6849,7 @@ background: #008db3;
 
 .text-bg-ts {
   color: #fff !important;
-  background-color: RGBA(24, 82, 56 var(--bs-bg-opacity, 1)) !important /* Actually Green in this version for GSM */
+  background-color: var(--bs-tsblue) !important /* Actually Green in this version for GSM */
 }
 
 .link-primary {
@@ -11033,4 +11033,5 @@ background: #008db3;
 }*/
 
 /*# sourceMappingURL=bootstrap.css.map */
+
 
