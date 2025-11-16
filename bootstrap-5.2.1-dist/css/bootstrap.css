@@ -3767,7 +3767,7 @@ textarea.form-control-lg {
   border-color: var(--bs-nav-tabs-link-active-border-color);
 }
 .nav-item:hover{
-background: #008db3;
+background: var(--bs-tsbluehover) !important /* Actually Green in this version for GSM */
 }
 .dropdown-menu a:hover{
   background: #004a5e;
@@ -11033,5 +11033,6 @@ background: #008db3;
 }*/
 
 /*# sourceMappingURL=bootstrap.css.map */
+
 
 
