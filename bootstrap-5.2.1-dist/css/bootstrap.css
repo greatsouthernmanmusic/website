@@ -72,7 +72,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #0d6efd;
+  --bs-link-color: #95e0be;
   --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
@@ -11033,6 +11033,7 @@ background: var(--bs-tsbluehover) !important /* Actually Green in this version f
 }*/
 
 /*# sourceMappingURL=bootstrap.css.map */
+
 
 
 
