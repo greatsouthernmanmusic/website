@@ -1,328 +1,723 @@
- <!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Great Southern Man | Acoustic/Electric Solo - Half Classics, Half Modern Hits, All Aussie</title>
-  <meta name="description" content="Great Southern Man is a solo performer on the Sunshine Coast playing Half Classics, Half Modern Hits, All Aussie." />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Great Southern Man" />
-  <!--Canonical URL-->
-  <link rel="canonical" href="https://greatsouthernmanmusic.github.io/website/home.html" />
-  <!-- Open Graph for Facebook/LinkedIn sharing -->
-  <meta property="og:title" content="Great Southern Man | Solo Performer" />
-  <meta property="og:description" content="Great Southern Man is a solo performer on the Sunshine Coast playing Half Classics, Half Modern Hits, All Aussie." />
-  <meta property="og:image" content="https://greatsouthernmanmusic.github.io/website/img/GSM_favicon.png" />
-  <meta property="og:url" content="https://greatsouthernmanmusic.github.io/website/home.html" />
-  <meta property="og:type" content="website" />
-  <!--Favicon-->
+  <!-- ============================================================
+       Great Southern Man — home.html
+       Last updated: April 2026
+       Built with Bootstrap 5.2.3 (CDN), Font Awesome 6.4 (CDN),
+       Google Fonts: Fredericka the Great + Quicksand
+  ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Southern Man | Acoustic/Electric Solo — Half Classics, Half Modern Hits, All Aussie</title>
+  <meta name="description" content="Great Southern Man is a solo performer on the Sunshine Coast playing Half Classics, Half Modern Hits, All Aussie.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Great Southern Man">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://greatsouthernmanmusic.github.io/website/home.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Great Southern Man | Solo Performer">
+  <meta property="og:description" content="Great Southern Man is a solo performer on the Sunshine Coast playing Half Classics, Half Modern Hits, All Aussie.">
+  <meta property="og:image" content="https://greatsouthernmanmusic.github.io/website/img/GSM_favicon.png">
+  <meta property="og:url" content="https://greatsouthernmanmusic.github.io/website/home.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
   <link rel="icon" href="img/GSM_favicon.png" type="image/png">
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Bootstrap 5.3 -->
-  <script src="https://greatsouthernmanmusic.github.io/website/bootstrap-5.2.1-dist/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="https://greatsouthernmanmusic.github.io/website/bootstrap-5.2.1-dist\css\bootstrap.css">
-  <!-- Font Awesome 6.1.1 -->
-  <link rel="stylesheet" type="text/css" href="https://timothy-scholl.github.io/fontawesome-v6.1.1-free/css/all.css">
-  <!-- Sweet Alert -->
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  <!-- CSS Customisations -->
-  <link href="https://greatsouthernmanmusic.github.io/website/css/customisation.css" rel="stylesheet">
-  <!-- Customisations that will move to external file -->
+
+  <!-- Bootstrap 5.2.3 CSS (CDN — minified) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome 6.4 (CDN — minified) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
+    /* ── Brand colour tokens ── */
+    :root {
+      --gsm-green:       #175238;
+      --gsm-green-mid:   #1a5c3a;
+      --gsm-green-light: #247953;
+      --gsm-green-hover: #7fffd4;
+    }
+
+    /* ── Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: "Quicksand", sans-serif; !important;
-      font-optical-sizing: auto;
-      font-size: 1.2rem;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.05rem;
       font-weight: 400;
-      padding-bottom: 8rem;
-      font-style: normal;
+      background: var(--gsm-green);
+      color: #fff;
+      padding-bottom: 5rem;
     }
-    .quicksand-body-font {
-      font-family: "Quicksand", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-    }
-    div.active {
-      background: var(--bs-tsblue) !important;
-      border-radius: 0px !important;
-    }
-    .fredericka-the-great-regular {
-      font-family: "Fredericka the Great", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    ul {
+
+    h1, h2, h3, h4, h5, h6 {
       font-family: 'Fredericka the Great', serif;
     }
 
-    ul {
-      font-size: 1.5rem;
+    a {
+      color: #fff;
+      text-decoration: underline;
     }
-
-    .dropdown .dropdown-menu {
-      visibility: hidden;
-      opacity: 0;
-      height: 0px;
-      padding: 0px;
-      transition: visibility 0s, height 0.5s linear, padding 0s, opacity 0.3s linear;
-    }
-
-    .dropdown:hover .dropdown-menu {
-      visibility: visible;
-      height: inherit;
-      padding: 5px 0px !important;
-      opacity: 1;
-    }
-
-    .dropdown-menu {
-      margin-top: 0;
-    }
-
-    div.form-check-inline {
-      line-height: 1.5rem;
-      display: inline-flex;
-    }
-
-    label {
-      line-height: 1.5rem;
-      margin-left: 5px;
-    }
-
-    input[type='radio'] {
-      line-height: 1.5rem;
-      margin: auto;
-    }
-
-    i.iconBtn:hover {
-      color: #008db3 !important;
-      border: #008db3 3px solid !important;
-    }
-
-    i.iconBtnSm:hover {
-      color: #008db3 !important;
-    }
-
-    a#bttBtn:hover {
-      background: #008db3 !important;
-    }
-
-    span#home {
-      position: relative;
-      top: -6rem;
-    }
-
-    span#whoAmI,
-    span#contact,
-    span#projects,
-    span#ats1665,
-    span#lgDesign,
-    span#beest,
-    span#musicPerf,
-    span#research,
-    span#learningInAction,
-    span#qualityTL,
-    span#sources {
-      position: relative;
-      top: -4.5rem;
-    }
-
-    .nav-link,
-    .nav-link:hover {
-      color: #fff !important;
-    }
-
-    .active {
-      background: var(--bs-tsbluehover) !important;
-      border-radius: 5px;
-    }
-
-    .nav-item {
-      margin: 0px 10px !important;
-      border-radius: 5px;
-    }
-
     a:hover {
-      color: #247953;
+      color: var(--gsm-green-hover);
     }
 
-    .copyBadge {
+    /* ── Nav pill bar ── */
+    .nav-pill-bar {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .nav-pill-bar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.15s ease;
+    }
+    .nav-pill-bar a:hover,
+    .nav-pill-bar a.active {
+      background: var(--gsm-green-light);
+      color: #fff;
+    }
+
+    /* ── Tab panels ── */
+    .tab-content {
+      display: none;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .tab-content.active {
+      display: block;
+    }
+
+    /* ── Section headings ── */
+    .section-heading {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .section-sub {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      opacity: 0.85;
+    }
+
+    /* ── Two-column layout ── */
+    .two-col {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .two-col .main-col { flex: 1; }
+    .two-col .side-col { flex-shrink: 0; min-width: 160px; text-align: center; }
+
+    /* ── Images ── */
+    img.profile-round {
+      border-radius: 50%;
+      width: 100%;
+      max-width: 180px;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+    img.logo-round {
+      border-radius: 50%;
+      width: 100%;
+      max-width: 160px;
+      display: block;
+      margin: 0 auto;
+      background: #fff;
+      padding: 4px;
+    }
+
+    /* ── 16:9 video ratio ── */
+    .ratio-16x9 {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+    }
+    .ratio-16x9 iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    /* ── Tags ── */
+    .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.15);
+      margin: 2px;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    /* ── Topic cards (Guitarniverse) ── */
+    .topic-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .topic-card h4 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+    .topic-card p {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ── Coming soon badge ── */
+    .badge-coming {
+      font-size: 0.65rem;
+      padding: 2px 7px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.15);
+      font-family: 'Quicksand', sans-serif;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
+
+    /* ── Soft CTA box ── */
+    .cta-box {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.07);
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .cta-box p {
+      margin-bottom: 1rem;
+      opacity: 0.9;
+    }
+
+    /* ── Checklist ── */
+    .checklist {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      max-width: 640px;
+    }
+    .checklist-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .checklist-item i {
+      color: var(--gsm-green-hover);
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+    .checklist-item p {
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* ── Pricing grid ── */
+    .price-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      max-width: 420px;
+      margin-bottom: 1.5rem;
+    }
+    .price-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .price-card .price {
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: 'Fredericka the Great', serif;
+    }
+    .price-card .duration {
+      font-size: 0.85rem;
+      opacity: 0.75;
+      margin-top: 4px;
+    }
+    .price-card .price-desc {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    /* ── Buttons ── */
+    .btn-gsm {
+      display: inline-block;
+      background: #fff;
+      color: var(--gsm-green);
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: 'Quicksand', sans-serif;
+      transition: background 0.15s, color 0.15s;
+      border: none;
       cursor: pointer;
+    }
+    .btn-gsm:hover {
+      background: var(--gsm-green-hover);
+      color: var(--gsm-green);
+    }
+    .btn-gsm-outline {
+      display: inline-block;
+      border: 2px solid #fff;
+      color: #fff;
+      font-weight: 700;
+      padding: 8px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: 'Quicksand', sans-serif;
+      transition: background 0.15s, color 0.15s;
+    }
+    .btn-gsm-outline:hover {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+    }
+
+    /* ── Copy email badge ── */
+    .copy-badge {
+      cursor: pointer;
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.2);
+      font-family: 'Quicksand', sans-serif;
+      margin-left: 6px;
+      border: none;
+      color: #fff;
+    }
+    .copy-badge:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    /* ── Fixed social footer ── */
+    .social-footer {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--gsm-green-mid);
+      border-top: 1px solid rgba(255,255,255,0.2);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.85rem;
+      z-index: 100;
+    }
+    .social-footer a,
+    .social-footer span {
+      color: #fff;
+      font-size: 1.3rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.15s;
+    }
+    .social-footer a:hover,
+    .social-footer span:hover {
+      color: var(--gsm-green-hover);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .two-col { flex-direction: column; }
+      .two-col .side-col { min-width: unset; width: 100%; }
+      .price-grid { grid-template-columns: 1fr; max-width: 280px; }
     }
   </style>
 </head>
 
-<body class="text-bg-ts">
-  <ul class="nav nav-pills text-bg-ts p-3 border-0 border border-bottom border-white mx-auto d-flex justify-content-between w-75">
-    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home" data-bs-toggle="tab">Home</a></li>
-    <!--<li class="nav-item"><a class="nav-link" href="#original" data-bs-toggle="tab">Original</a></li>-->
-    <li class="nav-item"><a class="nav-link" href="#cover" data-bs-toggle="tab">Covers</a></li>
-    <li class="nav-item"><a class="nav-link" href="#contact" data-bs-toggle="tab">Contact</a></li>
-  </ul>
-  <div class="tab-content m-3 w-75 mx-auto">
-    <!-- Home tab -->
-    <div class="tab-pane fade show active" id="home" role="tabpanel">
-      <h1 class="text-center">GREAT SOUTHERN MAN</h1>
-      <h3 class="text-center fst-italic">Half Classics, Half Modern Hits, All Aussie</h3>
-      <div class="row">
-        <div class="col-lg my-auto">
-          <p>Love an afternoon at the pub? Love a great Aussie Classic tune to sink a pint to? Great Southern Man (Tim Scholl), is putting Aussie Music in your ears 100% of the time. Whether you're a Hoodoo Guru, or a Middle Kid, GSM is all about celebrating our country's great musical history, and showing you a modern Aussie artist or two you will be adding to your favourite playlists. Why? Cause Aussie Music bloody rocks that's why, and we should be pumping it in our pubs and on our airways more to support our artists, just like other countries do.</p>
-          <p>The idea for Great Southern Man has grown out of gracing stages from Lismore to the Sunshine Coast with some of this country's best musicians, such as the <a href="https://soundcloud.com/user-344469131/tracks" title="Shannon Beaumont Soundcloud" target="_blank" rel="noopener">Shannon Beaumont Band</a>, <a href="https://www.instagram.com/thepinkzinc/?hl=en" target="_blank" title="Pink Zinc Instagram" rel="noopener">Pink Zinc</a>, <a href="https://www.rochelleleesband.com.au/" target="_blank" title="Rochelle Lees Band Website" rel="noopener">Rochelle Lees Band</a>, and the Lydia Storey Trio, as well as his creative contributions to original groups like <a href="https://headphonesymphony.bandcamp.com/album/am-i-just" title="Am I Just - Headphone Symphony" target="_blank" rel="noopener">Headphone Symphony</a>, <a href="https://arora.bandcamp.com/album/stop-watch-ep" title="Stop & Watch EP - Arora" target="_blank" rel="noopener">Arora</a> and <a href="https://www.abc.net.au/triplejunearthed/artist/sujitoko/" title="Sujitoko Triple J Unearthed" target="_blank" rel="noopener">Sujitoko</a>.</p>
-          <p>Great Southern Man offers a range of performance setups, from intimate acoustic sessions to full-scale dance floor loop driven mayhem. The goal is to connect deeply with every audience, from casual cafe gatherings to spirited evenings at the local RSL, and reminding people that Aussie Music is the best in the world.</p>
-          <p>As this country's music artists continue to evolve and bloom, Great Southern Man invites listeners to experience the overwhelming wealth of absolute bangers this nation has produced over the last 50 years.</p>
-        </div>
-        <div class="col-lg-3 my-auto d-flex flex-column justify-content-between">
-          <img class="img-fluid rounded rounded-circle mb-3" src="img/TimPhoto.jpg" alt="Profile Photo" />
-          <img class="img-fluid bg-white rounded-circle" src="img/GSM_Logo.png" alt="GSM Logo" />
-        </div>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="nav-pill-bar">
+    <a href="#" class="active" onclick="showTab('home', this); return false;">Home</a>
+    <a href="#" onclick="showTab('covers', this); return false;">Covers</a>
+    <a href="#" onclick="showTab('guitarniverse', this); return false;">Guitarniverse</a>
+    <a href="#" onclick="showTab('lessons', this); return false;">Lessons</a>
+    <a href="#" onclick="showTab('contact', this); return false;">Contact</a>
+  </nav>
+
+
+  <!-- ============================================================
+       HOME TAB
+  ============================================================ -->
+  <div class="tab-content active" id="tab-home">
+    <h1 class="section-heading" style="font-size: clamp(1.8rem, 6vw, 3rem);">GREAT SOUTHERN MAN</h1>
+    <p class="section-sub">Half Classics, Half Modern Hits, All Aussie</p>
+
+    <div class="two-col">
+      <div class="main-col">
+        <p style="margin-bottom: 1rem; line-height: 1.8;">
+          Love an afternoon at the pub? Love a great Aussie classic to sink a pint to? Great Southern Man
+          (Tim Scholl) is putting Aussie music in your ears 100% of the time. Whether you're a Hoodoo Guru
+          or a Middle Kids fan, GSM is about celebrating this country's great musical history and introducing
+          you to a modern Aussie artist or two you'll be adding to your playlists immediately. Why? Because
+          Aussie music rocks, and it deserves more airtime — in our pubs, on our airways, and in our hearts.
+        </p>
+        <p style="margin-bottom: 1rem; line-height: 1.8;">
+          The idea for Great Southern Man grew out of years gracing stages from Lismore to the Sunshine Coast
+          alongside some of this country's best musicians — the
+          <a href="https://soundcloud.com/user-344469131/tracks" target="_blank" rel="noopener">Shannon Beaumont Band</a>,
+          <a href="https://www.instagram.com/thepinkzinc/" target="_blank" rel="noopener">Pink Zinc</a>,
+          <a href="https://www.rochelleleesband.com.au/" target="_blank" rel="noopener">Rochelle Lees Band</a>,
+          and the Lydia Storey Trio — as well as original projects including
+          <a href="https://headphonesymphony.bandcamp.com/album/am-i-just" target="_blank" rel="noopener">Headphone Symphony</a>,
+          <a href="https://arora.bandcamp.com/album/stop-watch-ep" target="_blank" rel="noopener">Arora</a> and
+          <a href="https://www.abc.net.au/triplejunearthed/artist/sujitoko/" target="_blank" rel="noopener">Sujitoko</a>.
+        </p>
+        <p style="line-height: 1.8;">
+          GSM offers a range of setups — from intimate acoustic sessions to full loop-driven dance floor mayhem.
+          The goal is always the same: remind people that Aussie music is the best in the world.
+        </p>
       </div>
-    </div>
-    <!-- Videos tab -->
-    <div class="tab-pane fade" id="videos" role="tabpanel">
-      <h1 class="text-center">Videos</h1>
-      <p>Here are some of Great Southern Man's videos.</p>
-    </div>
-    <!-- Cover Music tab -->
-    <div class="tab-pane fade" id="cover" role="tabpanel">
-      <h1 class="text-center">Cover Music</h1>
-      <div class="row">
-        <div class="col-lg-6 mx-auto">
-          <h3 class="text-center">Great Southern Man Reel</h3>
-          <div class="ratio ratio-16x9 border border-white border-3 rounded">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3BquV_TproQ?si=Js6uOELycDenh59D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <h3 class="text-center mt-3">Track Listing</h3>
-          <ol class="mb-0">
-            <li>Great Southern Land - Icehouse</li>
-            <li>You're Not The Same - Bodyjar</li>
-            <li>Down Under - Men at Work</li>
-            <li>Clumsy Love - Thelma Plum</li>
-            <li>Live It Up - Mental As Anything</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-    <!-- Contact tab -->
-    <div class="tab-pane fade" id="contact" role="tabpanel">
-      <h1 class="text-center">Contact</h1>
-      <div class="row">
-        <div class="col-lg">
-          <h2>Get in touch</h2>
-          <h3>Email</h3>
-          <p><span><i class="fa fa-envelope fa-xl"></i></span> <span>greatsouthernmanmusic@gmail.com</span> <span class="badge copyBadge text-bg-light">Click to copy email</span></p>
-          <h3>Socials</h3>
-          <p><a href="https://www.instagram.com/greatsouthernmanmusic" title="Great Southern Man Facebook Page" target="_blank" rel="noopener"><i class="fab fa-xl fa-instagram text-white"></i></a><a class="mx-3" href="https://www.facebook.com/greatsouthernmanmusic" title="Great Southern Man Facebook Page" target="_blank" rel="noopener"><i class="fab fa-xl fa-facebook text-white"></i></a><a href="https://www.youtube.com/@greatsouthernmanmusic" title="Great Southern Man YouTube Channel" target="_blank" rel="noopener"><i class="fab fa-xl fa-youtube text-white"></i></a></p>
-          <h3>Contact Form</h3>
-          <div data-embed-src="https://kontactr.com/form/965f8a7e1482607"></div>
-          <script src="https://d3vxmrleduyji.cloudfront.net/js/e.js"></script>
-        </div>
-        <div class="col-lg my-auto">
-          <img class="img-fluid rounded rounded-pill" src="img/BakehouseRehearsal.jpg" alt="Tim @ Bakehouse Studios Melbourne" />
-          <img class="img-fluid rounded rounded-pill mt-4" src="img/BakehouseRehearsal2.jpg" alt="Tim @ Bakehouse Studios Melbourne" />
-        </div>
+      <div class="side-col">
+        <img class="profile-round" src="img/TimPhoto.jpg" alt="Tim Scholl — Great Southern Man">
+        <img class="logo-round" src="img/GSM_Logo.png" alt="Great Southern Man logo">
       </div>
     </div>
   </div>
+
+
+  <!-- ============================================================
+       COVERS TAB
+  ============================================================ -->
+  <div class="tab-content" id="tab-covers">
+    <h1 class="section-heading">Covers</h1>
+    <p class="section-sub">A taste of what GSM brings to a set</p>
+
+    <div style="max-width: 640px; margin: 0 auto;">
+      <h3 style="text-align: center; margin-bottom: 0.75rem;">Great Southern Man — Reel</h3>
+
+      <div class="ratio-16x9" style="border: 3px solid rgba(255,255,255,0.4); border-radius: 10px; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/3BquV_TproQ?si=Js6uOELycDenh59D"
+                title="Great Southern Man Reel"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+      </div>
+
+      <h3 style="text-align: center; margin: 1.5rem 0 0.75rem;">Track listing</h3>
+      <ol style="font-family: 'Fredericka the Great', serif; font-size: 1.1rem; padding-left: 1.5rem; line-height: 2.2;">
+        <li>Great Southern Land — Icehouse</li>
+        <li>You're Not The Same — Bodyjar</li>
+        <li>Down Under — Men at Work</li>
+        <li>Clumsy Love — Thelma Plum</li>
+        <li>Live It Up — Mental As Anything</li>
+      </ol>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       GUITARNIVERSE TAB — free content only
+  ============================================================ -->
+  <div class="tab-content" id="tab-guitarniverse">
+    <h1 class="section-heading">Guitarniverse</h1>
+    <p class="section-sub">Free guitar lessons. Real technique. All feel.</p>
+
+    <p style="text-align: center; max-width: 620px; margin: 0 auto 2rem; line-height: 1.8; opacity: 0.9;">
+      Guitarniverse is a free library of guitar lessons built around one idea: technique should serve music,
+      not the other way around. Whether you're picking up the guitar for the first time or looking to break
+      through a plateau, these lessons focus on taste, feel, and the things that actually make you sound like
+      a guitarist.
+    </p>
+
+    <!-- Topic cards -->
+    <div class="topic-card">
+      <h4>Getting started — how to hold a guitar without hating yourself <span class="badge-coming">Coming soon</span></h4>
+      <p>Posture, hand position, and the small adjustments that prevent bad habits forming early. The stuff no one tells you until you've already been doing it wrong for six months.</p>
+      <div style="margin-top: 8px;">
+        <span class="tag">Beginner</span>
+        <span class="tag">Technique</span>
+        <span class="tag">Posture</span>
+      </div>
+    </div>
+
+    <div class="topic-card">
+      <h4>Open chords — the six shapes that unlock 90% of songs <span class="badge-coming">Coming soon</span></h4>
+      <p>G, C, D, Em, Am, E. Learn them properly the first time — clean, ringing, and with transitions that don't make you want to throw the guitar out the window.</p>
+      <div style="margin-top: 8px;">
+        <span class="tag">Beginner</span>
+        <span class="tag">Chords</span>
+        <span class="tag">Rhythm</span>
+      </div>
+    </div>
+
+    <div class="topic-card">
+      <h4>Strumming patterns — why rhythm matters more than notes <span class="badge-coming">Coming soon</span></h4>
+      <p>Most beginners focus on what to play. The best players obsess over when and how. This lesson breaks down groove, timing and feel — the things that make a simple chord sequence come alive.</p>
+      <div style="margin-top: 8px;">
+        <span class="tag">Beginner</span>
+        <span class="tag">Rhythm</span>
+        <span class="tag">Feel</span>
+      </div>
+    </div>
+
+    <div class="topic-card">
+      <h4>Barre chords — the wall every guitarist hits, and how to get over it <span class="badge-coming">Coming soon</span></h4>
+      <p>The F chord has ended more guitar journeys than anything else. This lesson makes barre chords approachable — with the right hand position, the right amount of pressure, and the right expectations.</p>
+      <div style="margin-top: 8px;">
+        <span class="tag">Intermediate</span>
+        <span class="tag">Chords</span>
+        <span class="tag">Technique</span>
+      </div>
+    </div>
+
+    <div class="topic-card">
+      <h4>Fingerpicking — patterns that make one guitar sound like two <span class="badge-coming">Coming soon</span></h4>
+      <p>Fingerpicking opens up a whole new vocabulary. This lesson covers the core Travis-style pattern, how to apply it to songs you already know, and how to start making it your own.</p>
+      <div style="margin-top: 8px;">
+        <span class="tag">Intermediate</span>
+        <span class="tag">Fingerpicking</span>
+        <span class="tag">Technique</span>
+      </div>
+    </div>
+
+    <div class="topic-card">
+      <h4>Playing Aussie classics — learning songs you actually want to play <span class="badge-coming">Coming soon</span></h4>
+      <p>Theory is easier to absorb when you're learning music you love. This series uses Australian classics to teach technique, chord theory and song structure — from Icehouse to Thelma Plum.</p>
+      <div style="margin-top: 8px;">
+        <span class="tag">All levels</span>
+        <span class="tag">Songs</span>
+        <span class="tag">Aussie Music</span>
+      </div>
+    </div>
+
+    <!-- Soft CTA pointing to Lessons tab -->
+    <div class="cta-box">
+      <p>Want to go further? One-on-one lessons available on the Sunshine Coast and online.</p>
+      <a href="#" onclick="showTab('lessons', document.querySelectorAll('.nav-pill-bar a')[3]); return false;"
+         class="btn-gsm">
+        <i class="fa-solid fa-calendar-check" style="margin-right: 6px;"></i> See lessons &amp; pricing
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       LESSONS TAB
+  ============================================================ -->
+  <div class="tab-content" id="tab-lessons">
+    <h1 class="section-heading">Lessons</h1>
+    <p class="section-sub">One-on-one guitar tuition — Sunshine Coast &amp; online</p>
+
+    <p style="max-width: 620px; margin: 0 auto 2rem; line-height: 1.8; opacity: 0.9; text-align: center;">
+      Free content is a great start, but nothing accelerates progress like one-on-one time with a teacher
+      who can see exactly what you're doing and fix it in real time. Tim offers lessons in person on the
+      Sunshine Coast and online anywhere in the world — for players at any level, from absolute beginners
+      to people who've been playing for years and hit a wall.
+    </p>
+
+    <!-- What to expect -->
+    <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">What to expect</h2>
+    <div class="checklist">
+      <div class="checklist-item">
+        <i class="fa-solid fa-check"></i>
+        <p>Lessons tailored to what <em>you</em> want to learn — no cookie-cutter curriculum unless that's what you need</p>
+      </div>
+      <div class="checklist-item">
+        <i class="fa-solid fa-check"></i>
+        <p>Focus on feel, taste and musicality — not just technique for its own sake</p>
+      </div>
+      <div class="checklist-item">
+        <i class="fa-solid fa-check"></i>
+        <p>Learn songs you actually love — Aussie music, classics, whatever keeps you motivated</p>
+      </div>
+      <div class="checklist-item">
+        <i class="fa-solid fa-check"></i>
+        <p>In person on the Sunshine Coast, or online via video call — your choice</p>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">Pricing</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price">$50</div>
+        <div class="duration">45 minutes</div>
+        <div class="price-desc">Great for focused work on one technique, song or concept</div>
+      </div>
+      <div class="price-card">
+        <div class="price">$70</div>
+        <div class="duration">75 minutes</div>
+        <div class="price-desc">More time to explore, cover more ground, go deeper</div>
+      </div>
+    </div>
+
+    <!-- Book CTA -->
+    <h2 style="font-size: 1.3rem; margin-bottom: 0.75rem;">Book a lesson</h2>
+    <p style="opacity: 0.85; line-height: 1.8; max-width: 560px; margin-bottom: 1.25rem;">
+      Pick a time that suits you via Calendly — it only takes a minute. If you've got questions first,
+      head to the Contact tab and send a message.
+    </p>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+      <a href="https://calendly.com/greatsouthernmanmusic/lessons?back=1"
+         target="_blank" rel="noopener" class="btn-gsm">
+        <i class="fa-solid fa-calendar-check" style="margin-right: 6px;"></i> Book via Calendly
+      </a>
+      <a href="#"
+         onclick="showTab('contact', document.querySelectorAll('.nav-pill-bar a')[4]); return false;"
+         class="btn-gsm-outline">
+        Ask a question first
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       CONTACT TAB
+  ============================================================ -->
+  <div class="tab-content" id="tab-contact">
+    <h1 class="section-heading">Contact</h1>
+    <p class="section-sub">Bookings, lessons, or just a chat</p>
+
+    <div class="two-col">
+      <div class="main-col">
+
+        <p style="margin-bottom: 0.5rem;">
+          <i class="fa fa-envelope fa-lg" style="margin-right: 8px;"></i>
+          greatsouthernmanmusic@gmail.com
+          <button class="copy-badge" id="copyEmailBtn" onclick="copyEmail()">Copy email</button>
+        </p>
+
+        <p style="margin-bottom: 1.5rem;">
+          <i class="fa-solid fa-calendar-check fa-lg" style="margin-right: 8px;"></i>
+          <a href="https://calendly.com/greatsouthernmanmusic/lessons?back=1"
+             target="_blank" rel="noopener">Book a lesson via Calendly</a>
+        </p>
+
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Socials</h3>
+        <div style="display: flex; gap: 1.25rem; margin-bottom: 1.5rem; font-size: 1.5rem;">
+          <a href="https://www.instagram.com/greatsouthernmanmusic" target="_blank" rel="noopener" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/greatsouthernmanmusic" target="_blank" rel="noopener" title="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.youtube.com/@greatsouthernmanmusic" target="_blank" rel="noopener" title="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Send a message</h3>
+        <!-- Kontactr embedded contact form -->
+        <div data-embed-src="https://kontactr.com/form/965f8a7e1482607"></div>
+        <script src="https://d3vxmrleduyji.cloudfront.net/js/e.js"></script>
+
+      </div>
+
+      <div class="side-col" style="min-width: 200px; display: flex; flex-direction: column; gap: 1rem;">
+        <img src="img/BakehouseRehearsal.jpg"
+             alt="Tim at Bakehouse Studios Melbourne"
+             style="border-radius: 12px; width: 100%;">
+        <img src="img/BakehouseRehearsal2.jpg"
+             alt="Tim at Bakehouse Studios Melbourne"
+             style="border-radius: 12px; width: 100%;">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       FIXED SOCIAL FOOTER
+  ============================================================ -->
+  <footer class="social-footer">
+    <a href="https://www.instagram.com/greatsouthernmanmusic"
+       target="_blank" rel="noopener" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/greatsouthernmanmusic"
+       target="_blank" rel="noopener" title="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.youtube.com/@greatsouthernmanmusic"
+       target="_blank" rel="noopener" title="YouTube">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://calendly.com/greatsouthernmanmusic/lessons?back=1"
+       target="_blank" rel="noopener" title="Book a lesson">
+      <i class="fa-solid fa-calendar-check"></i>
+    </a>
+    <span id="footerEmail" title="Copy email address">
+      <i class="fa fa-envelope"></i>
+    </span>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+       Bootstrap 5.2.3 bundle (CDN — minified, includes Popper)
+  ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var copyBadges = document.querySelectorAll('.copyBadge');
-      copyBadges.forEach(function (badge) {
-        badge.addEventListener('click', function () {
-          var prevSpanText = badge.previousElementSibling.textContent;
-          var originalBadgeText = badge.textContent;
+    // ── Tab switching ──
+    function showTab(name, el) {
+      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.nav-pill-bar a').forEach(a => a.classList.remove('active'));
+      document.getElementById('tab-' + name).classList.add('active');
+      if (el) el.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
-          navigator.clipboard.writeText(prevSpanText)
-            .then(function () {
-              // On success:
-              badge.textContent = 'Email copied';
+    // ── Copy email (contact tab button) ──
+    function copyEmail() {
+      const btn = document.getElementById('copyEmailBtn');
+      navigator.clipboard.writeText('greatsouthernmanmusic@gmail.com').then(() => {
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy email'; }, 2000);
+      });
+    }
 
-              // Change the text back after 2500ms
-              setTimeout(function () {
-                badge.textContent = originalBadgeText;
-              }, 2000);
-            })
-            .catch(function () {
-              // On error:
-              console.error('Failed to copy text.');
-            });
-        });
+    // ── Copy email (footer icon) ──
+    document.getElementById('footerEmail').addEventListener('click', function () {
+      navigator.clipboard.writeText('greatsouthernmanmusic@gmail.com').then(() => {
+        const icon = this.querySelector('i');
+        icon.className = 'fa fa-check';
+        setTimeout(() => { icon.className = 'fa fa-envelope'; }, 1700);
       });
     });
-  </script>
-  <script>
+
+    // ── Fix Kontactr iframe height once it loads ──
     document.addEventListener('DOMContentLoaded', function () {
-      var envelopeIcon = document.querySelector('footer i.fa-envelope');
-
-      if (!envelopeIcon) {
-        console.log('The envelope icon was not found.');
-        return;
-      }
-
-      envelopeIcon.addEventListener('click', function () {
-        console.log('The envelope icon was clicked.');
-
-        // Change the icon to fa-check
-        envelopeIcon.classList.remove('fa-envelope');
-        envelopeIcon.classList.add('fa-check');
-
-        // Copy the email to the clipboard
-        navigator.clipboard.writeText('greatsouthernmanmusic@gmail.com')
-          .then(function () {
-            console.log('The email was successfully copied to the clipboard.');
-
-            // Show a SweetAlert
-            swal({
-              title: "Success!",
-              text: "Email copied to clipboard",
-              icon: "success",
-              buttons: false,
-              timer: 1700,
-            });
-
-            // On success, change the icon back to fa-envelope after 2500ms
-            setTimeout(function () {
-              envelopeIcon.classList.remove('fa-check');
-              envelopeIcon.classList.add('fa-envelope');
-            }, 1700);
-          })
-          .catch(function (error) {
-            // On error, log a message to the console
-            console.error('Failed to copy email.', error);
-          });
-      });
-    });
-  </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var checkIframe = setInterval(function () {
-        var iframe = document.querySelector('iframe[src*="https://kontactr.com/"]');
+      var check = setInterval(function () {
+        var iframe = document.querySelector('iframe[src*="kontactr.com"]');
         if (iframe) {
-          console.log('iframe found');
           iframe.setAttribute('scrolling', 'no');
           iframe.style.height = '625px';
-          clearInterval(checkIframe); // Stop checking once the iframe is found
+          clearInterval(check);
         }
-      }, 2000); // Check every 2000ms (2 seconds)
+      }, 2000);
     });
   </script>
-</body>
-<footer class="fixed-bottom border-0 border border-top border-white mx-auto d-flex justify-content-evenly w-75 py-3 bg-ts">
-  <a href="https://www.instagram.com/greatsouthernmanmusic" title="Great Southern Man Instagram Page" target="_blank" rel="noopener"><i class="fab  fa-xl fa-instagram text-white"></i></a>
-  <a href="https://www.facebook.com/greatsouthernmanmusic" title="Great Southern Man Facebook Page" target="_blank" rel="noopener"><i class="fab fa-xl fa-facebook text-white"></i></a>
-  <a href="https://www.youtube.com/@greatsouthernmanmusic" title="Great Southern Man YouTube Channel" target="_blank" rel="noopener"><i class="fab  fa-xl fa-youtube text-white"></i></a>
-  <span><i class="fa fa-envelope fa-xl"></i></span>
-</footer>
 
+</body>
 </html>
