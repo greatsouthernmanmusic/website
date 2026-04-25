@@ -241,7 +241,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
-      max-width: 420px;
       margin-bottom: 1.5rem;
     }
     .price-card {
@@ -425,13 +424,15 @@
       </div>
 
       <h3 style="text-align: center; margin: 1.5rem 0 0.75rem;">Track listing</h3>
-      <ol style="font-family: 'Fredericka the Great', serif; font-size: 1.1rem; padding-left: 1.5rem; line-height: 2.2;">
+      <div style="text-align: center;">
+      <ol style="font-family: 'Fredericka the Great', serif; font-size: 1.1rem; padding-left: 0; line-height: 2.2;">
         <li>Great Southern Land — Icehouse</li>
         <li>You're Not The Same — Bodyjar</li>
         <li>Down Under — Men at Work</li>
         <li>Clumsy Love — Thelma Plum</li>
         <li>Live It Up — Mental As Anything</li>
       </ol>
+      </div>
     </div>
   </div>
 
@@ -535,7 +536,7 @@
       Sunshine Coast and online anywhere in the world — for players at any level, from absolute beginners
       to people who've been playing for years and hit a wall.
     </p>
-    <div style="margin: 0 auto; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+    <div style="margin: 0 auto; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; max-width: fit-content;padding-bottom: 2rem">
     <a href="#"
          onclick="showTab('contact', document.querySelectorAll('.nav-pill-bar a')[4]); return false;"
          class="btn-gsm-outline">
