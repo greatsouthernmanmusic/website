@@ -579,10 +579,11 @@
       head to the Contact tab and send a message.
     </p>
     <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
-      <a href="https://calendly.com/greatsouthernmanmusic/lessons?back=1"
-         target="_blank" rel="noopener" class="btn-gsm">
-        <i class="fa-solid fa-calendar-check" style="margin-right: 6px;"></i> Book via Calendly
-      </a>
+      <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/greatsouthernmanmusic/lessons?background_color=175238&text_color=ffffff&primary_color=247953', text: 'Book a lesson', color: '#ffffff', textColor: '#175238', branding: true }); }</script>
+<!-- Calendly badge widget end -->
       <a href="#"
          onclick="showTab('contact', document.querySelectorAll('.nav-pill-bar a')[4]); return false;"
          class="btn-gsm-outline">
