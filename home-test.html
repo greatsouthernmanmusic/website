@@ -132,14 +132,14 @@
     img.profile-round {
       border-radius: 50%;
       width: 100%;
-      max-width: 180px;
+      max-width: 250px;
       display: block;
       margin: 0 auto 1rem;
     }
     img.logo-round {
       border-radius: 50%;
       width: 100%;
-      max-width: 160px;
+      max-width: 250px;
       display: block;
       margin: 0 auto;
       background: #fff;
@@ -220,7 +220,6 @@
       display: grid;
       gap: 0.75rem;
       margin-bottom: 2rem;
-      max-width: 640px;
     }
     .checklist-item {
       display: flex;
@@ -444,7 +443,7 @@
     <h1 class="section-heading">Guitarniverse</h1>
     <p class="section-sub">Free guitar lessons. Real technique. All feel.</p>
 
-    <p style="text-align: center; max-width: 620px; margin: 0 auto 2rem; line-height: 1.8; opacity: 0.9;">
+    <p style="text-align: center; margin: 0 auto 2rem; line-height: 1.8; opacity: 0.9;">
       Guitarniverse is a free library of guitar lessons built around one idea: technique should serve music,
       not the other way around. Whether you're picking up the guitar for the first time or looking to break
       through a plateau, these lessons focus on taste, feel, and the things that actually make you sound like
@@ -530,12 +529,20 @@
     <h1 class="section-heading">Lessons</h1>
     <p class="section-sub">One-on-one guitar tuition — Sunshine Coast &amp; online</p>
 
-    <p style="max-width: 620px; margin: 0 auto 2rem; line-height: 1.8; opacity: 0.9; text-align: center;">
+    <p style="margin: 0 auto 2rem; line-height: 1.8; opacity: 0.9; text-align: center;">
       Free content is a great start, but nothing accelerates progress like one-on-one time with a teacher
       who can see exactly what you're doing and fix it in real time. Tim offers lessons in person on the
       Sunshine Coast and online anywhere in the world — for players at any level, from absolute beginners
       to people who've been playing for years and hit a wall.
     </p>
+    <div style="margin: 0 auto; display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+    <a href="#"
+         onclick="showTab('contact', document.querySelectorAll('.nav-pill-bar a')[4]); return false;"
+         class="btn-gsm-outline">
+        Ask a question first
+      </a>
+      <a class="btn-gsm-outline" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/greatsouthernmanmusic/lessons'});return false;">Book a lesson with me on Calendly</a>
+    </div>
 
     <!-- What to expect -->
     <h2 style="font-size: 1.3rem; margin-bottom: 1rem;">What to expect</h2>
@@ -572,25 +579,10 @@
         <div class="price-desc">More time to explore, cover more ground, go deeper</div>
       </div>
     </div>
-
-    <!-- Book CTA -->
-    <h2 style="font-size: 1.3rem; margin-bottom: 0.75rem;">Book a lesson</h2>
-    <p style="opacity: 0.85; line-height: 1.8; max-width: 560px; margin-bottom: 1.25rem;">
-      Pick a time that suits you via Calendly — it only takes a minute. If you've got questions first,
-      head to the Contact tab and send a message.
-    </p>
-    <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
-    <a href="#"
-         onclick="showTab('contact', document.querySelectorAll('.nav-pill-bar a')[4]); return false;"
-         class="btn-gsm-outline">
-        Ask a question first
-      </a>
-    </div>
     <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
       <!-- Calendly link widget begin -->
       <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
       <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-      <a class="btn-gsm-outline" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/greatsouthernmanmusic/lessons'});return false;">Book a lesson with me on Calendly</a>
       <!-- Calendly link widget end -->
     </div>
   </div>
