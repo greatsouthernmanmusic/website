@@ -360,7 +360,7 @@
     <a href="#" class="active" onclick="showTab('home', this); return false;">Home</a>
     <a href="#" onclick="showTab('covers', this); return false;">Covers</a>
     <a href="#" onclick="showTab('guitarniverse', this); return false;">Guitarniverse</a>
-    <a href="#" onclick="showTab('lessons', this); return false;">Lessons</a>
+    <a href="#" onclick="showTab('lessons', this); reloadFrame(); return false;">Lessons</a>
     <a href="#" onclick="showTab('contact', this); return false;">Contact</a>
   </nav>
 
@@ -417,6 +417,7 @@
 
       <div class="ratio-16x9" style="border: 3px solid rgba(255,255,255,0.4); border-radius: 10px; overflow: hidden;">
         <iframe src="https://www.youtube.com/embed/3BquV_TproQ?si=Js6uOELycDenh59D"
+                id="myVideoFrame"
                 title="Great Southern Man Reel"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
@@ -716,6 +717,12 @@
       }, 2000);
     });
   </script>
-
+<script>
+  function reloadFrame() {
+    const iframe = document.getElementById('myVideoFrame');
+    // Re-assigning the src forces the iframe to refresh
+    iframe.src = iframe.src;
+  }
+</script>
 </body>
 </html>
